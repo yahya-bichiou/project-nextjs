@@ -5,11 +5,11 @@ export default function Header() {
       <div className={" h-full flex flex-col"}>
         {/* Logo at the top */}
         <div className="flex justify-center items-start pt-5">
-          <img
+          <a href=""><img
             src="/images/logo.svg"
             width={200}
             alt="UploadThing Logo"
-          />
+          /></a>
         </div>
 
         {/* Slogan vertically centered in remaining space */}

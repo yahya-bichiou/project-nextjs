@@ -8,7 +8,9 @@ export default function Page() {
   return (
     <>
       <main id="main-scroll" className="h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth">
-        <FlyingFile />
+        <section className="relative"> {/* Important: add relative here */}
+          <FlyingFile />
+        </section>
         <section className="h-screen snap-start">
           <Header/>
         </section>
