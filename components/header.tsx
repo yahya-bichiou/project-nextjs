@@ -1,17 +1,9 @@
-
+import Logo from "./logo";
 export default function Header() {
   return (
     <header className="h-screen">
       <div className={" h-full flex flex-col"}>
-        {/* Logo at the top */}
-        <div className="flex justify-center items-start pt-5">
-          <a href=""><img
-            src="/images/logo.svg"
-            width={200}
-            alt="UploadThing Logo"
-          /></a>
-        </div>
-
+        <Logo/>
         {/* Slogan vertically centered in remaining space */}
         <div className="flex-1 flex flex-col justify-end pb-60 pl-40">
           <h2 className="text-6xl font-bold text-purple-400">
@@ -33,7 +25,7 @@ export default function Header() {
             <button className="bg-purple-400 hover:bg-purple-500 transition-colors duration-200 rounded-lg text-white mt-5 px-6 py-3 font-medium">
               Get Started
             </button>
-            <a href="https://docs.uploadthing.com/" className="flex items-center gap-1 text-purple-400 hover:text-purple-500 transition-colors mt-5 group">
+            <a href="/docs" className="flex items-center gap-1 text-purple-400 hover:text-purple-500 transition-colors mt-5 group">
               Documentation <span className="group-hover:translate-x-1 transition-transform">→</span>
             </a>
           </div>

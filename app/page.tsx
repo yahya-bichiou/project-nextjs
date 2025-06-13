@@ -1,7 +1,7 @@
 import Header from "../components/header";
 import Features from "../components/features";
 import FlyingFile from "../components/flyingfile";
-import Footer from "../components/footer";
+import Final from "../components/final";
 import Demo from "../components/demo";
 
 export default function Page() {
@@ -21,7 +21,7 @@ export default function Page() {
           <Features/>
         </section>
         <section id="footer" className="h-screen snap-start flex justify-center items-center">
-          <Footer/>
+          <Final/>
         </section>
       </main>
     </>
