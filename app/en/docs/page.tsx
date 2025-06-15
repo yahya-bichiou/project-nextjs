@@ -1,5 +1,5 @@
 import { Code, Terminal, Download, Settings, Zap, CheckCircle, File } from "lucide-react"
-import Logo from "@/components/logo"
+import Logo from "@/components/en/logo"
 import Footer from "@/components/footer"
 
 export default function Page() {

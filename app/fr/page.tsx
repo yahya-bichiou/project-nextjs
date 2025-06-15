@@ -1,14 +1,14 @@
-import Header from "../components/header";
-import Features from "../components/features";
-import FlyingFile from "../components/flyingfile";
-import Final from "../components/final";
-import Demo from "../components/demo";
+import Header from "@/components/fr/header";
+import Features from "@/components/fr/features";
+import FlyingFile from "@/components/fr/flyingfile";
+import Final from "@/components/fr/final";
+import Demo from "@/components/fr/demo";
 
 export default function Page() {
   return (
     <>
       <main id="main-scroll" className="h-screen snap-y snap-mandatory overflow-y-scroll scroll-smooth">
-        <section className="relative"> {/* Important: add relative here */}
+        <section className="relative">
           <FlyingFile />
         </section>
         <section className="h-screen snap-start">

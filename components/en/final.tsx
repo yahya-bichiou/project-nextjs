@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Footer from "./footer";
+import Footer from "@/components/footer";
 
 export default function final() {
   // Configuration for the upload lines
