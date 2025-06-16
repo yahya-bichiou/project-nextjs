@@ -1,8 +1,8 @@
-import Header from "@/components/fr/header";
-import Features from "@/components/fr/features";
-import FlyingFile from "@/components/fr/flyingfile";
-import Final from "@/components/fr/final";
-import Demo from "@/components/fr/demo";
+import Header from "@/components/header";
+import Features from "@/components/features";
+import FlyingFile from "@/components/flyingfile";
+import Final from "@/components/final";
+import Demo from "@/components/demo";
 
 export default function Page() {
   return (

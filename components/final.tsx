@@ -1,9 +1,10 @@
 "use client";
-
+import { useTranslations } from 'next-intl';
 import { motion } from "framer-motion";
 import Footer from "@/components/footer";
 
 export default function final() {
+  const t = useTranslations('Final');
   // Configuration for the upload lines
   const lineCount = 40; // More lines
   const lineHeight = "150px"; // Shorter height
@@ -39,13 +40,13 @@ export default function final() {
       {/* Main content */}
       <div className="flex-grow flex flex-col justify-center items-center gap-8 px-4 relative z-10">
         <h2 className="text-4xl font-bold text-center text-white">
-          Ready to simplify your file uploads?
+          {t("title")}
         </h2>
         <h2 className="text-2xl text-center text-purple-200">
-          Get started with UploadThing today!
+          {t("subtitle")}
         </h2>
         <button className="bg-purple-500 hover:bg-purple-600 transition-all duration-300 rounded-lg text-white px-8 py-3 font-medium text-lg shadow-lg hover:shadow-purple-500/30 mt-6">
-          Get Started
+          {t("button")}
         </button>
       </div>
       <Footer/>

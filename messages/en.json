@@ -1,0 +1,67 @@
+{
+  "Header": {
+    "title": "The fastest way",
+    "subtitle": "To handle file uploads",
+    "description": "Uploading should be simple. That's why we built UploadThing",
+    "text": " A seamless way to handle files from button to backend.",
+    "text2": "Fast, secure, and built for developers",
+    "getStarted": "Get Started",
+    "documentation": "Documentation",
+    "to": "/en/docs"
+  },
+
+  "Language": {
+    "lang": "EN",
+    "to": "/fr"
+  },
+
+  "Logo": {
+    "to": "/en"
+  },
+
+  "Demo": {
+    "title": "Demo",
+    "subtitle": "How to Use UT CLI",
+    "text": "Upload files effortlessly from your terminal with just one command. Simply install the 'ut' tool, run commands, and your file will be securely uploaded in seconds — no hassle, no GUI needed.",
+    "support": "Supported file types: Images (JPG, PNG, GIF), Documents (PDF, TXT, JSON, XML, CSV), and more."
+  },
+
+  "Features": {
+    "title": "Our Tool Offer",
+    "f1": "Blazing-fast uploads",
+    "t1": "Lightning quick file transfers with optimized compression",
+    "f2": "Private file support",
+    "t2": "End-to-end encryption for sensitive documents",
+    "f3": "Custom downloads",
+    "t3": "Configure download permissions and limits",
+    "f4": "Metadata-rich listings",
+    "t4": "Detailed file information and searchable tags",
+    "f5": "Easy configuration",
+    "t5": "Simple YAML-based setup and management",
+    "f6": "Large file tracking",
+    "t6": "Monitor transfers of big files with progress indicators",
+    "f7": "Flexible formats",
+    "t7": "Support for multiple output formats and conversions",
+    "f8": "Force overwrite",
+    "t8": "Override existing files when necessary"
+  },
+
+  "Final": {
+    "title": "Ready to simplify your file uploads?",
+    "subtitle": "Get started with UploadThing today!",
+    "button": "Get Started"
+  },
+
+  "Docs": {
+    "subtitle": "The official command-line interface for UploadThing. Streamline your file upload workflows, manage your UploadThing projects, and deploy with confidence using our powerful CLI tool.",
+    "icon": "Quick Start",
+    "desc": "Get up and running in seconds with our streamlined setup process.",
+    "title1": "Project Installation",
+    "desc2": "Configure your UploadThing secret key",
+    "title3": "Commands",
+    "desc3": "File Upload",
+    "desc4": "File Download",
+    "title4": "List Files",
+    "title5": "Command Options"
+  }
+}

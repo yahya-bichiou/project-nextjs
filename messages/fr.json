@@ -1,0 +1,67 @@
+{
+  "Header": {
+    "title": "Une solution plus rapide",
+    "subtitle": "Pour gérer vos téléchargements",
+    "description": "Télécharger devrait être simple, UploadThing est",
+    "text": "Une solution fluide, rapide et sécurisée pour gérer vos fichiers.",
+    "text2": "Du clic jusqu’au backend, spécialement conçue pour les développeurs",
+    "getStarted": "Commencer",
+    "documentation": "Documentation",
+    "to": "/fr/docs"
+  },
+
+  "Language": {
+    "lang": "FR",
+    "to": "/en"
+  },
+
+  "Logo": {
+    "to": "/fr"
+  },
+
+  "Demo": {
+    "title": "Démo",
+    "subtitle": "Comment utiliser UT CLI",
+    "text": "Téléchargez des fichiers en toute simplicité depuis votre terminal avec une seule commande. Installez simplement l'outil 'ut', exécutez les commandes, et votre fichier sera téléchargé en toute sécurité en quelques secondes — sans complications, sans interface graphique nécessaire.",
+    "support": "Formats pris en charge : Images (JPG, PNG, GIF), Documents (PDF, TXT, JSON, XML, CSV), et plus encore."
+  },
+
+  "Features": {
+    "title": "Nos Fonctionnalités",
+    "f1": "Téléchargements ultra-rapides",
+    "t1": "Transferts de fichiers éclairs avec compression optimisée",
+    "f2": "Fichiers privés",
+    "t2": "Chiffrement de bout en bout pour documents sensibles",
+    "f3": "Téléchargements personnalisés",
+    "t3": "Configurer les permissions et limites de téléchargement",
+    "f4": "Métadonnées détaillées",
+    "t4": "Informations complètes et tags recherchables",
+    "f5": "Configuration facile",
+    "t5": "Installation et gestion simplifiée via YAML",
+    "f6": "Suivi des gros fichiers",
+    "t6": "Surveillance des transferts avec indicateurs de progression",
+    "f7": "Formats flexibles",
+    "t7": "Prise en charge de multiples formats et conversions",
+    "f8": "Écrasement forcé",
+    "t8": "Remplacer les fichiers existants si nécessaire"
+  },
+
+  "Final": {
+    "title": "Prêt à simplifier vos téléchargements ?",
+    "subtitle": "Essayez UploadThing dès aujourd'hui !",
+    "button": "Commencer"
+  },
+
+  "Docs": {
+    "subtitle": "L'interface en ligne de commande officielle pour UploadThing. Simplifiez vos flux de travail de téléchargement de fichiers, gérez vos projets UploadThing et déployez en toute confiance avec notre puissant outil CLI.",
+    "icon": "Démarrage rapide",
+    "desc": "Soyez opérationnel en quelques secondes avec notre processus d'installation simplifié.",
+    "title1": "Installation du Projet",
+    "desc2": "Configurez votre clé secrète UploadThing",
+    "title3": "Commandes",
+    "desc3": "Téléversement de fichiers",
+    "desc4": "Téléchargement de fichiers",
+    "title4": "Lister les fichiers",
+    "title5": "Options des commandes"
+  }
+}
