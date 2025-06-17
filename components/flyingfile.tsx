@@ -1,10 +1,12 @@
 "use client";
-
-import { useState } from "react";
-import { motion, useAnimation, useMotionValue, useTransform } from "framer-motion";
+import {
+  motion,
+  useAnimation,
+  useMotionValue,
+  useTransform,
+} from "framer-motion";
 
 export default function FlyingFile() {
-  const [imgSrc] = useState("/images/file.png");
   const controls = useAnimation();
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -18,7 +20,7 @@ export default function FlyingFile() {
     controls.start({
       x: 0,
       y: 0,
-      transition: { type: "spring", stiffness: 300 }
+      transition: { type: "spring", stiffness: 300 },
     });
   };
 
@@ -44,7 +46,7 @@ export default function FlyingFile() {
       transition={{ type: "spring", damping: 10 }}
     >
       <motion.img
-        src={imgSrc}
+        src="/images/file.png"
         alt="Interactive file"
         className="w-full h-full pointer-events-none"
         draggable="false"

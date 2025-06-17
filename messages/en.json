@@ -6,17 +6,12 @@
     "text": " A seamless way to handle files from button to backend.",
     "text2": "Fast, secure, and built for developers",
     "getStarted": "Get Started",
-    "documentation": "Documentation",
-    "to": "/en/docs"
+    "documentation": "Documentation"
   },
 
   "Language": {
     "lang": "EN",
     "to": "/fr"
-  },
-
-  "Logo": {
-    "to": "/en"
   },
 
   "Demo": {

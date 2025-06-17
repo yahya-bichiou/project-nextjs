@@ -1,17 +1,18 @@
 "use client";
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import Footer from "@/components/footer";
 
-export default function final() {
-  const t = useTranslations('Final');
+export default function Final() {
+  const t = useTranslations("Final");
+
   // Configuration for the upload lines
-  const lineCount = 40; // More lines
-  const lineHeight = "150px"; // Shorter height
-  const animationDuration = 4; // Animation speed
+  const lineCount = 40;
+  const lineHeight = "150px";
+  const animationDuration = 4;
 
   return (
-    <section id="footer" className="flex flex-col min-h-screen w-full relative bg-gray-900 overflow-hidden">
+    <section className="flex flex-col min-h-screen w-full relative bg-gray-900 overflow-hidden">
       {/* Animated upload lines */}
       <div className="absolute inset-0 z-0">
         {[...Array(lineCount)].map((_, i) => (
@@ -25,13 +26,13 @@ export default function final() {
                 duration: animationDuration,
                 repeat: Infinity,
                 ease: "linear",
-                delay: Math.random() * 2 // Staggered start
-              }
+                delay: Math.random() * 2,
+              },
             }}
             style={{
               height: lineHeight,
-              left: `${(Math.random() * 100)}%`, // Random horizontal position
-              opacity: 0.3 + Math.random() * 0.4 // Random opacity
+              left: `${Math.random() * 100}%`,
+              opacity: 0.3 + Math.random() * 0.4,
             }}
           />
         ))}
@@ -49,7 +50,7 @@ export default function final() {
           {t("button")}
         </button>
       </div>
-      <Footer/>
+      <Footer />
     </section>
   );
 }

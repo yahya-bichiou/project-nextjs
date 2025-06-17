@@ -1,22 +1,17 @@
 {
   "Header": {
-    "title": "Une solution plus rapide",
+    "title": "La façon la plus rapide",
     "subtitle": "Pour gérer vos téléchargements",
     "description": "Télécharger devrait être simple, UploadThing est",
     "text": "Une solution fluide, rapide et sécurisée pour gérer vos fichiers.",
     "text2": "Du clic jusqu’au backend, spécialement conçue pour les développeurs",
     "getStarted": "Commencer",
-    "documentation": "Documentation",
-    "to": "/fr/docs"
+    "documentation": "Documentation"
   },
 
   "Language": {
     "lang": "FR",
     "to": "/en"
-  },
-
-  "Logo": {
-    "to": "/fr"
   },
 
   "Demo": {

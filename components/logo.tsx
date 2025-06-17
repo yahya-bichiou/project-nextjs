@@ -1,14 +1,16 @@
-'use client';
-import { useTranslations } from 'next-intl';
-export default function Logo() {
-  const t = useTranslations('Logo');
-    return (
-        <div className="flex justify-center items-start pt-5">
-          <a href={t("to")}><img
-            src="/images/logo.svg"
-            width={200}
-            alt="UploadThing Logo"
-          /></a>
-        </div>
-    );
+import Image from "next/image";
+
+export default function Logo({ local }: { local: string }) {
+  return (
+    <div className="flex justify-center items-start pt-5">
+      <a href={`/${local}`}>
+        <Image
+          src="/images/logo.svg"
+          width={200}
+          height={60}
+          alt="UploadThing Logo"
+        />
+      </a>
+    </div>
+  );
 }

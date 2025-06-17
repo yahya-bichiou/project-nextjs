@@ -1,19 +1,31 @@
 "use client";
-import { useTranslations } from 'next-intl';
-import { Code, Terminal, Download, Settings, Zap, CheckCircle, File } from "lucide-react"
-import Logo from "@/components/logo"
-import Footer from "@/components/footer"
+import { useTranslations, useLocale} from "next-intl";
+import {
+  Code,
+  Terminal,
+  Download,
+  Settings,
+  CheckCircle,
+  File,
+} from "lucide-react";
+import Logo from "@/components/logo";
+import Footer from "@/components/footer";
 
 export default function Page() {
-    const t = useTranslations('Docs');
+  const t = useTranslations("Docs");
+  const locale = useLocale();
+
   return (
-    <div className="min-h-screen text-purple-400" style={{ backgroundColor: "#140227" }}>
+    <div
+      className="min-h-screen text-purple-400"
+      style={{ backgroundColor: "#140227" }}
+    >
       {/* Header */}
       <header
         className="pb-5 mb-3 border-b border-purple-400/20 sticky top-0 backdrop-blur-sm"
         style={{ backgroundColor: "rgba(20, 2, 39, 0.9)" }}
       >
-        <Logo/>
+        <Logo local = {locale}/>
       </header>
 
       <div className="max-w-6xl mx-auto px-6 py-8">
@@ -31,9 +43,7 @@ export default function Page() {
               <CheckCircle className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
               <div>
                 <p className="text-white font-medium">{t("icon")}</p>
-                <p className="text-gray-400 text-sm">
-                  {t("desc")}
-                </p>
+                <p className="text-gray-400 text-sm">{t("desc")}</p>
               </div>
             </div>
           </div>
@@ -48,7 +58,9 @@ export default function Page() {
 
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">{t("title1")}</h3>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                {t("title1")}
+              </h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
@@ -71,14 +83,19 @@ export default function Page() {
 
           <div className="space-y-4 mt-5">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">{t("desc2")}</h3>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                {t("desc2")}
+              </h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
-                    # Set your secret key<br/>
-                    ut config set-secret sk_your_secret_key_here<br/>
-                    <br/>
-                    # View current configuration<br/>
+                    # Set your secret key
+                    <br />
+                    ut config set-secret sk_your_secret_key_here
+                    <br />
+                    <br />
+                    # View current configuration
+                    <br />
                     ut config show
                   </code>
                 </div>
@@ -96,14 +113,19 @@ export default function Page() {
 
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">{t("desc3")}</h3>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                {t("desc3")}
+              </h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
-                    # Basic upload<br/>
-                    ut push image.jpg<br/>
-                    <br/>
-                    # Upload with progress tracking (automatic for large files)<br/>
+                    # Basic upload
+                    <br />
+                    ut push image.jpg
+                    <br />
+                    <br />
+                    # Upload with progress tracking (automatic for large files)
+                    <br />
                     ut push large-video.mp4
                   </code>
                 </div>
@@ -113,27 +135,41 @@ export default function Page() {
 
           <div className="space-y-4 mt-5">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">{t("desc4")}</h3>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                {t("desc4")}
+              </h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
-                    # Download to current directory<br/>
-                    ut fetch abc123-example.jpg<br/>
-                    <br/>
-                    # Download with custom filename<br/>
-                    ut fetch abc123-example.jpg -o myfile.jpg<br/>
-                    <br/>
-                    # Download to specific directory<br/>
-                    ut fetch abc123-example.jpg -o ./downloads/<br/>
-                    <br/>
-                    # Download with progress bar<br/>
-                    ut fetch abc123-example.jpg --progress<br/>
-                    <br/>
-                    # Download private file (requires API key)<br/>
-                    ut fetch abc123-example.jpg --private<br/>
-                    <br/>
-                    # Force overwrite existing files<br/>
-                    ut fetch abc123-example.jpg --force<br/>
+                    # Download to current directory
+                    <br />
+                    ut fetch abc123-example.jpg
+                    <br />
+                    <br />
+                    # Download with custom filename
+                    <br />
+                    ut fetch abc123-example.jpg -o myfile.jpg
+                    <br />
+                    <br />
+                    # Download to specific directory
+                    <br />
+                    ut fetch abc123-example.jpg -o ./downloads/
+                    <br />
+                    <br />
+                    # Download with progress bar
+                    <br />
+                    ut fetch abc123-example.jpg --progress
+                    <br />
+                    <br />
+                    # Download private file (requires API key)
+                    <br />
+                    ut fetch abc123-example.jpg --private
+                    <br />
+                    <br />
+                    # Force overwrite existing files
+                    <br />
+                    ut fetch abc123-example.jpg --force
+                    <br />
                   </code>
                 </div>
               </div>
@@ -142,14 +178,19 @@ export default function Page() {
 
           <div className="space-y-4 mt-5">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">{t("title4")}</h3>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                {t("title4")}
+              </h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
-                    # List all files<br/>
-                    ut list<br/>
-                    <br/>
-                    # List with file details<br/>
+                    # List all files
+                    <br />
+                    ut list
+                    <br />
+                    <br />
+                    # List with file details
+                    <br />
                     ut list --verbose
                   </code>
                 </div>
@@ -167,20 +208,29 @@ export default function Page() {
 
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">`ut fetch` options</h3>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                `ut fetch` options
+              </h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
-                    # Custom output path or directory<br/>
-                    -o, --output<br/>
-                    <br/>
-                    # Overwrite existing files without prompt<br/>
-                    -f, --force<br/>
-                    <br/>
-                    # Show download progress<br/>
-                    -p, --progress<br/>
-                    <br/>
-                    # Download private file (requires API key)<br/>
+                    # Custom output path or directory
+                    <br />
+                    -o, --output
+                    <br />
+                    <br />
+                    # Overwrite existing files without prompt
+                    <br />
+                    -f, --force
+                    <br />
+                    <br />
+                    # Show download progress
+                    <br />
+                    -p, --progress
+                    <br />
+                    <br />
+                    # Download private file (requires API key)
+                    <br />
                     --private
                   </code>
                 </div>
@@ -190,11 +240,14 @@ export default function Page() {
 
           <div className="space-y-4 mt-5">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">`ut list` options</h3>
+              <h3 className="text-lg font-semibold text-white mb-3">
+                `ut list` options
+              </h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
-                    # Show detailed file information<br/>
+                    # Show detailed file information
+                    <br />
                     -v, --verbose
                   </code>
                 </div>
@@ -205,5 +258,5 @@ export default function Page() {
       </div>
       <Footer />
     </div>
-  )
+  );
 }
