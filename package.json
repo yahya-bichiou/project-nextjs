@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest"
+    "test": "jest",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -42,7 +43,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.0.2",
     "jest-environment-jsdom": "^30.0.2",
-    "prettier": "^3.5.3",
+    "prettier": "^3.6.0",
     "tailwindcss": "^4",
     "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
