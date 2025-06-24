@@ -5,6 +5,7 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
+import React from "react";
 
 export default function FlyingFile() {
   const controls = useAnimation();
@@ -12,7 +13,7 @@ export default function FlyingFile() {
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-100, 100], [15, -15]);
   const rotateY = useTransform(x, [-100, 100], [-15, 15]);
-  const handleDragStart = (e: any) => {
+  const handleDragStart = (e: MouseEvent | TouchEvent | PointerEvent) => {
     e.preventDefault();
   };
 
