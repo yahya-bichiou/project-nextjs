@@ -1,4 +1,3 @@
-"use client";
 import { useTranslations } from "next-intl";
 import { TerminalMockup } from "@/components/TerminalMockup";
 
