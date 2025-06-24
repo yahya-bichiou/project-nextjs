@@ -2,7 +2,6 @@
 import { motion } from "framer-motion";
 
 export default function Bgeffect() {
-  // Configuration for the upload lines
   const lineCount = 40;
   const lineHeight = "150px";
   const animationDuration = 4;

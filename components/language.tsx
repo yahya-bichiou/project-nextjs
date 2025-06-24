@@ -6,7 +6,6 @@ export default function Language() {
   const t = useTranslations("Language");
   return (
     <>
-      {/* Language switcher button */}
       <div className="absolute top-6 right-12 z-100">
         <Link
           href={t("to")}

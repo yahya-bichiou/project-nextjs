@@ -57,7 +57,6 @@ export default function FlyingFile() {
         onDragStart={handleDragStart}
       />
 
-      {/* Floating particles */}
       {Array.from({ length: 10 }).map((_, i) => (
         <motion.div
           key={i}
