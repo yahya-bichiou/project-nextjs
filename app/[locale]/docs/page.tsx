@@ -1,5 +1,5 @@
 "use client";
-import { useTranslations, useLocale} from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import {
   Code,
   Terminal,
@@ -25,7 +25,7 @@ export default function Page() {
         className="pb-5 mb-3 border-b border-purple-400/20 sticky top-0 backdrop-blur-sm"
         style={{ backgroundColor: "rgba(20, 2, 39, 0.9)" }}
       >
-        <Logo local = {locale}/>
+        <Logo local={locale} />
       </header>
 
       <div className="max-w-6xl mx-auto px-6 py-8">
