@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import FlyingFile from '@/components/flyingfile';
+import { render, screen } from "@testing-library/react";
+import FlyingFile from "@/components/flyingfile";
 
-test('shows file image', () => {
+test("shows file image", () => {
   render(<FlyingFile />);
-  const image = screen.getByAltText('Interactive file');
+  const image = screen.getByAltText("Interactive file");
   expect(image).toBeInTheDocument();
 });
