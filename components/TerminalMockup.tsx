@@ -1,6 +1,6 @@
-"use client";
-import { Copy } from "lucide-react";
-import { useState } from "react";
+'use client';
+import { Copy } from 'lucide-react';
+import { useState } from 'react';
 
 export function TerminalMockup({ children }: { children: string }) {
   const [copied, setCopied] = useState(false);
@@ -29,9 +29,7 @@ export function TerminalMockup({ children }: { children: string }) {
       </div>
       <div className="p-4 text-white">
         <pre className="whitespace-pre-wrap">{children}</pre>
-        {copied && (
-          <div className="text-xs text-gray-500 mt-2">Copied to clipboard!</div>
-        )}
+        {copied && <div className="text-xs text-gray-500 mt-2">Copied to clipboard!</div>}
       </div>
     </div>
   );

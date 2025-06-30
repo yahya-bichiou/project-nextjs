@@ -1,8 +1,8 @@
-import Header from "@/components/header";
-import Features from "@/components/features";
-import FlyingFile from "@/components/flyingfile";
-import Final from "@/components/final";
-import Demo from "@/components/demo";
+import Header from '@/components/header';
+import Features from '@/components/features';
+import FlyingFile from '@/components/flyingfile';
+import Final from '@/components/final';
+import Demo from '@/components/demo';
 
 export default function Page() {
   return (
@@ -23,10 +23,7 @@ export default function Page() {
         <section className="h-screen snap-start flex justify-center items-center bg-white">
           <Features />
         </section>
-        <section
-          id="footer"
-          className="h-screen snap-start flex justify-center items-center"
-        >
+        <section id="footer" className="h-screen snap-start flex justify-center items-center">
           <Final />
         </section>
       </main>

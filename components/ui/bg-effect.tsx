@@ -1,9 +1,9 @@
-"use client";
-import { motion } from "framer-motion";
+'use client';
+import { motion } from 'framer-motion';
 
 export default function Bgeffect() {
   const lineCount = 40;
-  const lineHeight = "150px";
+  const lineHeight = '150px';
   const animationDuration = 4;
 
   return (
@@ -12,13 +12,13 @@ export default function Bgeffect() {
         <motion.div
           key={i}
           className="absolute w-0.5 bg-purple-400/30"
-          initial={{ y: "200vh" }}
+          initial={{ y: '200vh' }}
           animate={{
             y: `-${lineHeight}`,
             transition: {
               duration: animationDuration,
               repeat: Infinity,
-              ease: "linear",
+              ease: 'linear',
               delay: Math.random() * 2,
             },
           }}

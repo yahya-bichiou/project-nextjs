@@ -1,29 +1,19 @@
-"use client";
-import { useTranslations, useLocale } from "next-intl";
-import {
-  Code,
-  Terminal,
-  Download,
-  Settings,
-  CheckCircle,
-  File,
-} from "lucide-react";
-import Logo from "@/components/logo";
-import Footer from "@/components/footer";
+'use client';
+import { useTranslations, useLocale } from 'next-intl';
+import { Code, Terminal, Download, Settings, CheckCircle, File } from 'lucide-react';
+import Logo from '@/components/logo';
+import Footer from '@/components/footer';
 
 export default function Page() {
-  const t = useTranslations("Docs");
+  const t = useTranslations('Docs');
   const locale = useLocale();
 
   return (
-    <div
-      className="min-h-screen text-purple-400"
-      style={{ backgroundColor: "#140227" }}
-    >
+    <div className="min-h-screen text-purple-400" style={{ backgroundColor: '#140227' }}>
       {/* Header */}
       <header
         className="pb-5 mb-3 border-b border-purple-400/20 sticky top-0 backdrop-blur-sm"
-        style={{ backgroundColor: "rgba(20, 2, 39, 0.9)" }}
+        style={{ backgroundColor: 'rgba(20, 2, 39, 0.9)' }}
       >
         <Logo local={locale} />
       </header>
@@ -35,15 +25,13 @@ export default function Page() {
             <File className="w-8 h-8" />
             Documentation
           </h2>
-          <p className="text-white text-lg leading-relaxed mb-6">
-            {t("subtitle")}
-          </p>
+          <p className="text-white text-lg leading-relaxed mb-6">{t('subtitle')}</p>
           <div className="bg-purple-400/10 border border-purple-400/20 rounded-lg p-4">
             <div className="flex items-start gap-3">
               <CheckCircle className="w-5 h-5 text-purple-400 mt-0.5 flex-shrink-0" />
               <div>
-                <p className="text-white font-medium">{t("icon")}</p>
-                <p className="text-gray-400 text-sm">{t("desc")}</p>
+                <p className="text-white font-medium">{t('icon')}</p>
+                <p className="text-gray-400 text-sm">{t('desc')}</p>
               </div>
             </div>
           </div>
@@ -58,9 +46,7 @@ export default function Page() {
 
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                {t("title1")}
-              </h3>
+              <h3 className="text-lg font-semibold text-white mb-3">{t('title1')}</h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
@@ -83,9 +69,7 @@ export default function Page() {
 
           <div className="space-y-4 mt-5">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                {t("desc2")}
-              </h3>
+              <h3 className="text-lg font-semibold text-white mb-3">{t('desc2')}</h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
@@ -108,14 +92,12 @@ export default function Page() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-purple-400 mb-6 flex items-center gap-3">
             <Code className="w-6 h-6" />
-            {t("title3")}
+            {t('title3')}
           </h2>
 
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                {t("desc3")}
-              </h3>
+              <h3 className="text-lg font-semibold text-white mb-3">{t('desc3')}</h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
@@ -135,9 +117,7 @@ export default function Page() {
 
           <div className="space-y-4 mt-5">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                {t("desc4")}
-              </h3>
+              <h3 className="text-lg font-semibold text-white mb-3">{t('desc4')}</h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
@@ -178,9 +158,7 @@ export default function Page() {
 
           <div className="space-y-4 mt-5">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                {t("title4")}
-              </h3>
+              <h3 className="text-lg font-semibold text-white mb-3">{t('title4')}</h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
@@ -203,14 +181,12 @@ export default function Page() {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-purple-400 mb-6 flex items-center gap-3">
             <Terminal className="w-6 h-6" />
-            {t("title5")}
+            {t('title5')}
           </h2>
 
           <div className="space-y-4">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                `ut fetch` options
-              </h3>
+              <h3 className="text-lg font-semibold text-white mb-3">`ut fetch` options</h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
@@ -240,9 +216,7 @@ export default function Page() {
 
           <div className="space-y-4 mt-5">
             <div>
-              <h3 className="text-lg font-semibold text-white mb-3">
-                `ut list` options
-              </h3>
+              <h3 className="text-lg font-semibold text-white mb-3">`ut list` options</h3>
               <div className="bg-black/40 border border-purple-400/20 rounded-lg p-4 space-y-2">
                 <div>
                   <code className="text-gray-400 font-mono">
